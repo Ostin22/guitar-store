@@ -1,0 +1,25 @@
+{% load static %}
+{% block content %}
+<head>
+    {% load static %}
+    <link rel="stylesheet" href="{% static 'css/login.css' %}">
+</head>
+<div class="row d-flex justify-content-center">
+    <div class="col-md-6">
+        <img src="{% static "logo.png" %}" class="img">
+        <h2>Inicio de sesión</h2>
+        <form action="{% url 'guitars:login' %}" method="post">
+            {% csrf_token %}
+            <div>
+                <label for="username">Usuario</label>
+                <input type="text" name="username" id="username" required>
+            </div>
+            <div>
+                <label for="password">Contraseña</label>
+                <input type="password" name="password" id="password" required>
+            </div>
+            <button type="submit" class="btn btn-primary">Ingresar</button>
+        </form>
+    </div>
+</div>
+{% endblock content %}

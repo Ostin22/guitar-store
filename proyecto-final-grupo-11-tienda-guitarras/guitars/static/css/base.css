@@ -1,0 +1,73 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgb(13, 13, 15);
+    color: black;
+    box-sizing: border-box; /* Asegura que el tamaño del contenedor se calcule correctamente */
+}
+
+/* Container adjustments */
+.container {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+    max-width: 1500px;
+<<<<<<< HEAD
+    padding-top: 60px; /* Ajusta según la altura de la barra de navegación fija */
+    padding-bottom: -10px; /* Espacio para el pie de página */
+=======
+    padding-top: 0px; /* Ajusta según la altura de la barra de navegación fija */
+    padding-bottom: 60px; /* Espacio para el pie de página */
+>>>>>>> 6018f06857ed0486d5093d65e4a250ffdb799e5f
+    box-sizing: border-box;
+}
+
+/* Navbar Styles */
+.navbar {
+    position: fixed; /* Fija la barra de navegación en la parte superior */
+    top: 0;
+    left: 0;
+    width: 100%;
+    z-index: 1000; /* Asegura que la barra de navegación esté encima del contenido */
+    background-color: rgb(13, 13, 15); /* Coincide con el fondo del cuerpo */
+    border-bottom: 1px solid #333; /* Opcional: agrega una línea de separación */
+}
+
+.navbar-brand {
+    font-size: 1.5rem; /* Aumenta el tamaño del texto del logotipo */
+}
+
+.navbar-nav .nav-link {
+    font-size: 1.2rem; /* Aumenta el tamaño del texto */
+    padding: 0.75rem 1.25rem; /* Ajusta el relleno del botón */
+}
+
+.navbar-toggler {
+    font-size: 1.5rem; /* Aumenta el tamaño del ícono de alternancia */
+    padding: 0.75rem 1.5rem; /* Ajusta el relleno del botón de alternancia */
+}
+
+.navbar-nav {
+    margin-left: auto;
+    margin-right: auto;
+}
+
+/* Footer Styles */
+.footer {
+<<<<<<< HEAD
+    bottom: 0; /* Coloca el pie de página en la parte inferior de la pantalla */
+    width: 100%; /* Asegura que ocupe todo el ancho de la pantalla */
+=======
+    bottom: 0;
+    width: 100%;
+>>>>>>> 6018f06857ed0486d5093d65e4a250ffdb799e5f
+    background-color: rgb(13, 13, 15); /* Coincide con el fondo del cuerpo */
+    color: white; /* Color del texto del pie de página */
+    text-align: center;
+    padding: 5px 0; /* Reduce el padding para que ocupe menos espacio */
+    box-shadow: 0 -1px 5px rgba(0, 0, 0, 0.1); /* Opcional: sombra para separación */
+    font-size: 12px; /* Reduce el tamaño de fuente si es necesario */
+    line-height: 1.2; /* Ajusta la altura de la línea para reducir el espacio vertical */
+}
